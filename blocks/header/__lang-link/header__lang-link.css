@@ -4,6 +4,11 @@
   line-height: 1.17;
   text-decoration: none;
   font-weight: 400;
+  padding-right: 18px;
+}
+
+.header__lang-link:last-of-type {
+  padding: 0;
 }
 
 @media screen and (max-width: 720px) {

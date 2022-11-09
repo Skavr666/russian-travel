@@ -1,6 +1,5 @@
 .cover__overlay {
-  height: calc(100vw/1.6);
-  max-height: 740px;
+  min-height: calc(100vw/1.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +18,14 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.cover__overlay:hover::after {
+  opacity: .2;
+}
+
+@media screen and (min-width: 1184px) {
+  .cover__overlay {
+    min-height: 740px;
+  }
 }
